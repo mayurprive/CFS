@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>TestNG:  TC_CFS_01 : To verify user can complete request with Request Type = Devanning and Document Type = BOL.</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TC_CFS_01 : To verify user can complete request with Request Type = Devanning and Document Type = BOL.</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Feb 28 14:48:17 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>205 seconds (205960 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cfs.index.ServiceRequestIndex.requestByBOLFlow()'><b>requestByBOLFlow</b><br>Test class: com.cfs.index.ServiceRequestIndex<br/>
+<a href="#Output-1757880885" onClick='toggleBox("Output-1757880885", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1757880885" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1757880885">
+<br></br><strong>TC_CFS_01 : To verify user can complete request with Request Type = Devanning and Document Type = BOL.</strong><br/>
+<br></br>--- <strong> Site/Build Version being Test : 1.0.0.12.3 ZARAQA</strong> ---<br/>
+<br></br>Step 1: Open url: <a href='http://192.168.0.134:8081/zodiac/core/'>http://192.168.0.134:8081/zodiac/core/</a><br/>
+<br></br>Step 2: Enter Username: <font color=#9400D3>kiwiqa04</font><br/>
+<br></br>Step 3: Enter password: <font color=#9400D3>Baps@200</font><br/>
+<br></br>Step 4: Select language: <font color=#9400D3>English</font><br/>
+<br></br>Step 5: Select site: <font color=#9400D3>Global</font><br/>
+<br></br>Step 6: Click on 'Login' button.<br/>
+<br></br>Verify that User Login successfully.<br/>
+<br></br><Strong><font color=#008000>Pass</font></strong><br/>
+<br></br>Step 7: Open "Search Request" screen.<br/>
+<br></br>Verify that Service Request screen is open.<br/>
+<br></br><Strong><font color=#008000>Pass</font></strong><br/>
+<br></br>Step 8: Click on "Create Request" button.<br/>
+<br></br>Verify that Create Request screen is open.<br/>
+<br></br><Strong><font color=#008000>Pass</font></strong><br/>
+<br></br>Step 9: Click on "Request Type" drop down.<br/>
+<br></br>Step 10: Select Devanning from Request Type option.<br/>
+<br></br>Verify that all the fields/checkbox are display for Devanning request.<br/>
+<br></br><Strong><font color=#008000>Pass</font></strong><br/>
+<br></br>Step 11: Enter Customer Name : <font color=#9400D3>TAM01</font><br/>
+<br></br>Step 12: Select Document Type : <font color=#9400D3>BOL</font><br/>
+<br></br>Step 13: Enter BOL Number :<font color=#9400D3>AAAAAA1021</font><br/>
+<br></br>Step 14: Vessel Visits found for BOL.<br/>
+<br></br>MAN0214<br/>
+<br></br>Step 15: Customer Invoice Option : <font color=#9400D3>Postpaid</font><br/>
+<br></br>Step 16: Click on Vessel Visit : <font color=#9400D3>MAN0214</font><br/>
+<br></br>Verify List of BOL & Containers display for selected Visit.<br/>
+<br></br><Strong><font color=#008000>Pass</font></strong><br/>
+<br></br><strong>BOL Info : 1</strong><br/>
+<br></br>BOL Number : AAAAAA1021 | Auth No. : <br/>
+<br></br><strong>Container(s) : 1</strong><br/>
+<br></br>Step 17: Selected Request Date : <font color=#9400D3>2017/02/28</font><br/>
+<br></br>Step 18: Select Target location : <font color=#9400D3>Truck</font><br/>
+<br></br>Step 19: Enter Email for update : <font color=#9400D3>cfs@mailinator.com</font><br/>
+<br></br>Step 20: Select Containers for Request.<br/>
+<br></br>Step 21: Select Additional Service.: <font color=#9400D3>CARGO MISCELLANEOUS</font><br/>
+<br></br>Step 22: Enter Quantity : <font color=#9400D3>8</font><br/>
+<br></br>Step 23: Select UOM: <font color=#9400D3>PACK</font><br/>
+<br></br>Step 24: Click on Add Service button. <br/>
+<br></br>Step 25: Enter Remarks : <font color=#9400D3>This is auto generated remarks for Automation purpose.</font><br/>
+<br></br>Verify Service is added successfully.<br/>
+<br></br><Strong><font color=#008000>Pass</font></strong><br/>
+<br></br>Step 26: Click on Save button. <br/>
+<br></br>Warning message display.<br/>
+<br></br>Step 27: Click on Yes button.<br/>
+<br></br>Verify Service Request created successfully.<br/>
+<br></br>Success Message : <Strong><font color=#008000>305012702: ssr request SSR1488273537447 created successfully</strong></font><br/>
+<br></br><strong>Request Number : </strong><font color=#9400D3>SSR1488273537447 </font><br/>
+<br></br><Strong><font color=#008000>Pass</font></strong><br/>
+<br></br>Verify mail is received on registered email address.<br/>
+<br></br><strong>Mail Subject : </strong>SSR1488273537447 Updated successfully for DEVANNING<br/>
+<br></br><Strong><font color=#008000>Pass</font></strong><br/>
+</div>
+</td>
+<td></td>
+<td>195</td>
+<td>com.cfs.index.ServiceRequestIndex@39c0f4a</td></tr>
+</table><p>
+</body>
+</html>

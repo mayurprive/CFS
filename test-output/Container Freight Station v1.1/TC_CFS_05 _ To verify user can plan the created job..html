@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>TestNG:  TC_CFS_05 : To verify user can plan the created job.</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TC_CFS_05 : To verify user can plan the created job.</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Mar 16 10:18:24 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>515 seconds (515222 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cfs.index.JobIndex.planCreatedJob()'><b>planCreatedJob</b><br>Test class: com.cfs.index.JobIndex<br/>
+<a href="#Output-980138431" onClick='toggleBox("Output-980138431", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-980138431" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-980138431">
+<br></br><strong>TC_CFS_05 : To verify user plan view the created job.</strong><br/>
+<br></br>--- <strong> Site/Build Version being Test : 1.0.0.12.3 ZARAQA</strong> ---<br/>
+<br></br>Step 1: Open url: <a href='http://192.168.0.136:8081/zodiac/core/'>http://192.168.0.136:8081/zodiac/core/</a><br/>
+<br></br>Step 2: Enter Username: <font color=#9400D3>kiwiqa04</font><br/>
+<br></br>Step 3: Enter password: <font color=#9400D3>Baps@200</font><br/>
+<br></br>Step 4: Select language: <font color=#9400D3>English</font><br/>
+<br></br>Step 5: Select site: <font color=#9400D3>Global</font><br/>
+<br></br>Step 6: Click on 'Login' button.<br/>
+<br></br>Verify that User Login successfully.<br/>
+<br></br><Strong><font color=#008000>Pass</font></strong><br/>
+<br></br>Step 7: Open 'Job' screen.<br/>
+<br></br>Verify that Job screen is open.<br/>
+<br></br><Strong><font color=#008000>Pass</font></strong><br/>
+<br></br>Step 8: Click on 'Filter' accordion.<br/>
+<br></br>Step 9: Select SSR Number from dropdown and filter with entered SSR number : <font color=#9400D3>null</font><br/>
+<br></br>Verify that filter jobs in grid.<br/>
+<br></br><strong>Total created jobs found for filtered SSR number : 1</strong><br/>
+<br></br><Strong><font color=#008000>Pass</font></strong><br/>
+<br></br>Step 10: Select one of the job from the table and view.<br/>
+<br></br>Verify that filter jobs in grid.<br/>
+<br></br><Strong><font color=#008000>Pass</font></strong><br/>
+<br></br>Step 11: Click on Edit button from Job Timings/Docking Bay accordion.<br/>
+<br></br>Step 12: Enter Estimated Start Date/Time in field : <font color=#9400D3>19/Mar/2017 10:22</font><br/>
+<br></br>Step 13: Enter Estimated End Date/Time in field : <font color=#9400D3>21/Mar/2017 10:22</font><br/>
+<br></br>Step 14: Click and Select Docking Bay : <font color=#9400D3>QADOCK1</font><br/>
+<br></br>Step 15: Click on Save button.<br/>
+<br></br>Step 16: Click on 'Add' button.<br/>
+<br></br>Step 17: Click and Select BOL : <font color=#9400D3>AAAAAA1014</font><br/>
+<br></br>Step 18: Click and Select Location Type : <font color=#9400D3>Rack</font><br/>
+<br></br>Step 19: Enter Location Name : <font color=#9400D3>QARACK100</font><br/>
+<br></br>Step 20: Click on 'Add' button.<br/>
+<br></br>Step 21: Enter Resource Name : <font color=#9400D3>QALAB100</font><br/>
+<br></br>Step 22: Click on All action icon from the top right corner. <br/>
+<br></br>Step 23: Click on 'Confirm' from the menu. <br/>
+<br></br>Verify Job Request confirmed successfully.<br/>
+<br></br><Strong><font color=#008000>Pass</font></strong><br/>
+</div>
+</td>
+<td></td>
+<td>506</td>
+<td>com.cfs.index.JobIndex@39c0f4a</td></tr>
+</table><p>
+</body>
+</html>

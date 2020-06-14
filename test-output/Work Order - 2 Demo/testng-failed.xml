@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="10" name="Failed suite [Work Order - 2 Demo]">
+  <parameter name="selenium.port" value="4444"/>
+  <parameter name="password" value="Baps@200"/>
+  <parameter name="site" value="Global"/>
+  <parameter name="selenium.host" value="localhost"/>
+  <parameter name="language" value="English"/>
+  <parameter name="userName" value="kiwiqa04"/>
+  <parameter name="selenium.browser" value="chrome"/>
+  <parameter name="selenium.url" value="http://192.168.0.134:8081/zodiac/cfs/"/>
+  <test name="TC_CFS_01 : To verify login functionality with valid credentials.(failed)">
+    <classes>
+      <class name="com.cfs.index.LoginIndex">
+        <methods>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="loginSuccessful"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.cfs.index.LoginIndex -->
+    </classes>
+  </test> <!-- TC_CFS_01 : To verify login functionality with valid credentials.(failed) -->
+  <test name="TC_CFS_02 : To verify logout functionality.(failed)">
+    <classes>
+      <class name="com.cfs.index.LoginIndex">
+        <methods>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="logoutSuccessful"/>
+        </methods>
+      </class> <!-- com.cfs.index.LoginIndex -->
+    </classes>
+  </test> <!-- TC_CFS_02 : To verify logout functionality.(failed) -->
+</suite> <!-- Failed suite [Work Order - 2 Demo] -->

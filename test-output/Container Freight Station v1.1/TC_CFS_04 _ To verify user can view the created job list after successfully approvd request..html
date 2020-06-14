@@ -1,0 +1,132 @@
+<html>
+<head>
+<title>TestNG:  TC_CFS_04 : To verify user can view the created job list after successfully approvd request.</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TC_CFS_04 : To verify user can view the created job list after successfully approvd request.</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Feb 28 14:35:34 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>370 seconds (370829 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cfs.index.JobIndex.viewCreatedJob()'><b>viewCreatedJob</b><br>Test class: com.cfs.index.JobIndex<br/>
+<a href="#Output-1757880885" onClick='toggleBox("Output-1757880885", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1757880885" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1757880885">
+<br></br><strong>TC_CFS_04 : To verify user can view the created job list after successfully approvd request.</strong><br/>
+<br></br>--- <strong> Site/Build Version being Test : 1.0.0.12.3 ZARAQA</strong> ---<br/>
+<br></br>Step 1: Open url: <a href='http://192.168.0.134:8081/zodiac/core/'>http://192.168.0.134:8081/zodiac/core/</a><br/>
+<br></br>Step 2: Enter Username: <font color=#9400D3>kiwiqa04</font><br/>
+<br></br>Step 3: Enter password: <font color=#9400D3>Baps@200</font><br/>
+<br></br>Step 4: Select language: <font color=#9400D3>English</font><br/>
+<br></br>Step 5: Select site: <font color=#9400D3>Global</font><br/>
+<br></br>Step 6: Click on 'Login' button.<br/>
+<br></br>Verify that User Login successfully.<br/>
+<br></br><Strong><font color=#008000>Pass</font></strong><br/>
+<br></br>Step 7: Open 'Job' screen.<br/>
+<br></br>Verify that Job screen is open.<br/>
+<br></br><Strong><font color=#008000>Pass</font></strong><br/>
+<br></br>Step 8: Click on 'Filter' accordion.<br/>
+<br></br>Step 9: Select SNR Number from dropdown and filter with entered SSR number.<br/>
+<br></br>Verify that filter jobs in grid.<br/>
+<br></br><strong>Total created jobs found for filtered SSR number : 3</strong><br/>
+<br></br><Strong><font color=#008000>Pass</font></strong><br/>
+<br></br>Step 10: Select one of the job from the table and view.<br/>
+<br></br>Verify that filter jobs in grid.<br/>
+<br></br><Strong><font color=#008000>Pass</font></strong><br/>
+<br></br>Step 11: <Strong>Details of opened job. </strong><br/>
+<br></br>Job Number : <font color=#9400D3>DEV1000000098949-3</font><br/>
+<br></br>BOL Number : <font color=#9400D3>CCCCCC1001</font><br/>
+<br></br>Job Status : <font color=#9400D3>Cancelled</font><br/>
+<br></br>Step 12: Click on List button from top right corner.<br/>
+<br></br>Step 13: Select one of the job from the table and view.<br/>
+<br></br>Verify that filter jobs in grid.<br/>
+<br></br><Strong><font color=#008000>Pass</font></strong><br/>
+<br></br>Step 14: <Strong>Details of opened job. </strong><br/>
+<br></br>Job Number : <font color=#9400D3>DEV1000000098947-2</font><br/>
+<br></br>BOL Number : <font color=#9400D3>CCCCCC1001</font><br/>
+<br></br>Job Status : <font color=#9400D3>Cancelled</font><br/>
+<br></br>Step 15: Click on List button from top right corner.<br/>
+<br></br>Step 16: Select one of the job from the table and view.<br/>
+<br></br>Verify that filter jobs in grid.<br/>
+<br></br><Strong><font color=#008000>Pass</font></strong><br/>
+<br></br>Step 17: <Strong>Details of opened job. </strong><br/>
+<br></br>Job Number : <font color=#9400D3>DEV1000000098945-1</font><br/>
+<br></br>BOL Number : <font color=#9400D3>CCCCCC1001</font><br/>
+<br></br>Job Status : <font color=#9400D3>In Progress</font><br/>
+<br></br>Step 18: Click on List button from top right corner.<br/>
+</div>
+</td>
+<td></td>
+<td>361</td>
+<td>com.cfs.index.JobIndex@39c0f4a</td></tr>
+</table><p>
+</body>
+</html>

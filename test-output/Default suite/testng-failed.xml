@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.cfs.index.ServiceRequestIndex">
+        <methods>
+          <include name="planPostpaidRequest"/>
+          <include name="completedRequest"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="tearDown"/>
+          <include name="approvePostpaidRequest"/>
+          <include name="setUp"/>
+          <include name="requestByBOLFlow"/>
+        </methods>
+      </class> <!-- com.cfs.index.ServiceRequestIndex -->
+      <class name="com.cfs.index.JobIndex">
+        <methods>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="viewCreatedJob"/>
+          <include name="completeDevanning"/>
+          <include name="planCreatedJob"/>
+          <include name="confirmContainerArrival"/>
+        </methods>
+      </class> <!-- com.cfs.index.JobIndex -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

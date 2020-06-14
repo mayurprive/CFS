@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Container Freight Station v1.1" verbose="10"
+	parallel="false" thread-count="1">
+
+
+	<!-- Put IP of localhost/Grid Hub machine -->
+	<parameter name="selenium.host" value="localhost" />
+
+	<!-- Put Port of localhost RC/Grid Hub machine -->
+	<parameter name="selenium.port" value="4444" />
+
+	<!-- Type firefox for Mozilla Firefox browser, ie for Internet Explorer 
+		and chrome for Google Chrome -->
+	<parameter name="selenium.browser" value="chrome" />
+
+	<parameter name="selenium.url" value="http://192.168.0.134:8081/zodiac/core/" />
+
+	<!-- Listeners - Uncomment below code when require to run code, following 
+		lines retry the failed scenarios to run 3 times. -->
+
+	<!-- <listeners> <listener class-name="com.wms.init.RetryTestListener" /> 
+		<listener class-name="com.wms.init.RetryConterManagerListener" /> <listener 
+		class-name="com.wms.init.CustomReporter" /> </listeners> -->
+
+	<!-- ==================================== Automation Test cases ==================================== -->
+
+
+
+<!-- 	<test
+		name="TC_CFS_01 : To verify user can complete request with Request Type = Devanning and Document Type = BOL.">
+		<classes>
+			<class name="com.cfs.index.ServiceRequestIndex">
+				<methods>
+					<include name="requestByBOLFlow" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="TC_CFS_02 : To verify user can plan postpaid request with Request Type = Devanning and Document Type = BOL.">
+		<classes>
+			<class name="com.cfs.index.ServiceRequestIndex">
+				<methods>
+					<include name="requestByBOLFlow" />
+					<include name="planPostpaidRequest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="TC_CFS_03 : To verify user can approve postpaid request with Request Type = Devanning and Document Type = BOL.">
+		<groups>
+			<run>
+				<include name="ServiceRequestIndex.servicerequest" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.cfs.index.ServiceRequestIndex" />
+		</classes>
+	</test>
+
+	<test
+		name="TC_CFS_04 : To verify user can view the created job list after successfully approved request.">
+		<classes>
+			<class name="com.cfs.index.ServiceRequestIndex" />
+			<class name="com.cfs.index.JobIndex">
+				<methods>
+					<include name="viewCreatedJob" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="TC_CFS_05 : To verify user can plan the created job.">
+		<classes>
+			<class name="com.cfs.index.ServiceRequestIndex" />
+			<class name="com.cfs.index.JobIndex">
+				<methods>
+					<include name="viewCreatedJob" />
+					<include name="planCreatedJob" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="TC_CFS_06 : To verify user can add container arrival information at gate.">
+		<classes>
+			<class name="com.cfs.index.ServiceRequestIndex" />
+			<class name="com.cfs.index.JobIndex">
+				<methods>
+					<include name="viewCreatedJob" />
+					<include name="planCreatedJob" />
+					<include name="confirmContainerArrival" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="TC_CFS_07 : To verify user add cut seal for jobs.">
+		<groups>
+			<run>
+				<include name="JobIndex.jobrequest" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.cfs.index.ServiceRequestIndex" />
+			<class name="com.cfs.index.JobIndex">
+				<methods>
+					<include name="completeDevanning" />
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+
+	<test name="TC_CFS_08 : To verify request comepleted successfully.">
+		<groups>
+			<run>
+				<include name="JobIndex.jobrequest" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.cfs.index.JobIndex" />
+			<class name="com.cfs.index.ServiceRequestIndex">
+				<methods>
+					<include name="completedRequest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+</suite>
